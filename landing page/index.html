@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ceac1b39b4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Landing page</title>
+</head>
+<body>
+    <div class="page__container">
+        <nav>
+            <div class="nav__logo"><a href="#">Travel.co</a></div>
+            <ul class="nav__links">
+                <li class="link"><a class="smooth-scroll" href="#home">Home</a></li>
+                <li class="link"><a class="smooth-scroll" href="#blog">Blog</a></li>
+                <li class="link"><a class="smooth-scroll" href="#offers">offers</a></li>
+                <li class="link"><a class="smooth-scroll" href="#services">Services</a></li>
+                <li class="link"><a class="smooth-scroll" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+        <section id="home">
+            <header>
+                <div class="section__container">
+                    <div class="header__content">
+                        <h1>Travel With us</h1>
+                        <p>
+                            Are you ready to embark on an unforgettable journey to some of the most breathtaking destinations on the planet? Look no further! Our travel experts have curated a selection of handpicked experiences that will leave you with memories to cherish for a lifetime. Whether you crave an adrenaline-pumping adventure, a serene beach escape, or a cultural immersion like no other, we've got you covered!
+                        </p>
+                        <button>Read more</button>
+                    </div>
+                </div>
+            </header>
+        </section>
+
+
+        <section id="blog">
+            <section class="journey__container">
+                <div class="section__container">
+                    <h2 class="section__title">Start Your Journey</h2>
+                    <p class="section__subtitle">The most searched countries in March</p>
+                    <div class="journey__grid">
+                        <div class="country__card">
+                            <img src="images/county-1.jpg" alt="country">
+                            <div class="country__name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Maldives</span>
+                            </div>      
+                        </div>
+                        <div class="country__card">
+                            <img src="images/country-2.jpg" alt="country"  height="250px">
+                            <div class="country__name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Bhutan</span>
+                            </div>      
+                        </div>
+                        <div class="country__card">
+                            <img src="images/country-3.jpg" alt="country" height="250px">
+                            <div class="country__name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Singapore</span>
+                            </div>      
+                        </div>
+                        <div class="country__card">
+                            <img src="images/country-4.jpg" alt="country">
+                            <div class="country__name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Malaysia</span>
+                            </div>      
+                        </div>
+                        <div class="country__card">
+                            <img src="images/country-5.jpg" alt="country">
+                            <div class="country__name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Vietnam</span>
+                            </div>      
+                        </div>
+                        <div class="country__card">
+                            <img src="images/country-6.jpg" alt="country" height="250px">
+                            <div class="country__name">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <span>Japan</span>
+                            </div>      
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+    </section>
+
+
+        <section id="offers">
+            <section class="banner__container">
+                <div class="section__container">
+                    <div class="banner__content">
+                        <h2>Discount 20-40% off</h2>
+                        <p>Who says you need to break the bank to satisfy your wanderlust, we believe that traveling the world should be accessible to everyone. Whether you're a seasoned backpacker or a first-time traveler, we've got budget-friendly solutions that will make your dreams come true without compromising on the experience.Ready to pack your bags and set off on an adventure that won't break your budget</p>
+                        <button><a href="#home">See Tours</a></button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+
+        <section id="services">
+            <section class="display__container">
+                <div class="section__container">
+                    <h2 class="section__title">Why Choose Us</h2>
+                    <p class="section__subtitle">The gladdest moment in human life, is a departure into unknownn lands.</p>
+                    <div class="display__grid">
+                        <div class="display__card grid-1">
+                            <img src="images/grid-1.jpg" alt="grid">
+                        </div>
+                        <div class="display__card">
+                            <img src="images/grid-2.jpeg" alt="grid">
+                            <i class="fa-solid fa-globe"></i>
+                            <h4>Passionate Travel</h4>
+                            <p>Fuel ypur passion for adventure and discover new horizons</p>
+                        </div>
+                        <div class="display__card">
+                            <img src="images/grid-3.jpg" alt="grid" height="372px">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <h4>Beautiful Places</h4>
+                            <p>Uncover the world's most breathtakingly beautiful places</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section id="contacts">
+            <footer>
+                <div class="section__container">
+                    <h4>Travel.co</h4>
+                    <div class="social__icons">
+                        <span><i class="fa-brands fa-facebook"></i></span>
+                        <span><i class="fa-brands fa-square-x-twitter"></i></span>
+                        <span><i class="fa-brands fa-instagram"></i></span>
+                        <span><i class="fa-brands fa-linkedin"></i></span>
+                    </div>
+                    <p>Travel makes one modest. You see what a tiny place you occupy in the world.</p>
+                </div>
+            </footer>
+    </section>
+    </div>
+
+
+    <script>
+        // Function to handle smooth scrolling to the specified section
+        function smoothScrollTo(sectionId) {
+          const section = document.getElementById(sectionId);
+          if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        }
+      
+        // Get all the smooth-scroll links in the navbar
+        const smoothScrollLinks = document.querySelectorAll('.smooth-scroll');
+      
+        // Add event listeners to each smooth-scroll link
+        smoothScrollLinks.forEach(link => {
+          link.addEventListener('click', event => {
+            event.preventDefault(); // Prevent default link behavior (page jump)
+            const sectionId = link.getAttribute('href').slice(1); // Get the section ID from the href attribute
+            smoothScrollTo(sectionId); // Call the smoothScrollTo function to scroll to the section
+          });
+        });
+      </script>
+      
+      
+      
+      
+      
+      
+</body>
+</html>
+
